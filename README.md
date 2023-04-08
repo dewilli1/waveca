@@ -1,4 +1,4 @@
-# Water ValvE Cascade
+# WAter ValvE CAscade
 A DIY box with a water in+out and 12V DC in+out, that can be cascaded. It shall be low-cost but provide basic l-safety. Hence, only one valve is used and water shall be connected in "parallel" while the cascading is referring to the current supply to reduce wiring (without dealing with wireless 
 stuff). The box shall somehow be mounted on a bucket (plant pot without drain) to realize either an ebb and flow system (requiring a backflow) or simply allow refilling water to a certain level (with the minimum of the box's height). The function may double as a switch to controll a pump with a lower and an upper fluid level sensor.
 
