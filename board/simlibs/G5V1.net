@@ -1,0 +1,24 @@
+* E:\Bastelprojekte\waveca\board\simlibs\G5V1.asc
+L1 N004 N007 0.015
+R1 N007 PIN2 480
+SWNO1 NO1 N008 N005 N004 SWNO
+D3 N006 N005 D
+D4 N001 N005 D
+R2 N006 PIN2 16k
+SWNC1 NC1 N008 N005 N004 SWNC
+R3 PIN9 N001 16k
+D5 PIN4 N003 D
+D6 PIN8 N003 D
+R4 N008 PIN5 5m
+R5 N008 PIN6 5m
+D7 PIN3 N002 D
+D8 PIN7 N002 D
+R6 PIN9 N004 480
+.model D D
+.lib C:\Users\Wilhelm\AppData\Local\LTspice\lib\cmp\standard.dio
+.model SWNO SW Ron=0.02 Roff=2Meg Vt=4.8 Vh=0.1
+.model SWNC SW Ron=2Meg Roff=0.02 Vt=4.9 Vh=0.15
+* first line is: .SUBCKT G5V1    NC1 PIN2 PIN3 PIN4 PIN5 PIN6 PIN7 PIN8 PIN9 NO1
+* change "end" to "ends"
+.backanno
+.end
