@@ -1,0 +1,17 @@
+version 2
+1
+9
+.tran 25m 4{return}.kicad adjustpaths{return}.save all{return}.probe alli
+4
+2
+I(R1)
+ 
+2
+I(R2)
+ 
+2
+I(V1)
+ 
+2
+I(V2)
+ 
