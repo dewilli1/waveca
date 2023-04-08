@@ -1,0 +1,31 @@
+**********************************
+**********************************
+**
+** Any relay
+** 1 channel(COM, NC and NO), bipolar coil
+** EC103xx-SxSx
+**
+** T. Chenoski
+** Irving Technical Center
+**
+** Created 04/08/23
+**
+**********************************
+**********************************
+.SUBCKT G5V1    NC1 PIN2 com1 PIN9 NO1
+L1 PIN9 N005 0.015
+R1 N005 PIN2 960
+SWNO NO1 com1 N003 N002 SWNO
+D1 N002 N001 D
+D2 N002 N004 D
+D3 N004 N003 D
+D4 N001 N003 D
+R2 N004 PIN2 16k
+SWNC NC1 com1 N003 N002 SWNC
+R3 PIN9 N001 16k
+.model D D
+.lib C:\Users\Wilhelm\AppData\Local\LTspice\lib\cmp\standard.dio
+.model SWNO SW Ron=0.02 Roff=2Meg Vt=7 Vh=1
+.model SWNC SW Ron=2Meg Roff=0.02 Vt=7 Vh=1
+.backanno
+.ends
