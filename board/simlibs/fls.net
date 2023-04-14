@@ -1,0 +1,13 @@
+* E:\Bastelprojekte\waveca\board\simlibs\fls.asc
+L1 N003 N005 3µ
+R1 N005 0 0.005
+V1 N006 0 PULSE(0 12 0.1 0.0032 0.0032 0.5 1 2)
+S1 N002 N003 N006 N004 FLSSW
+R3 N004 0 16000
+V2 N001 0 6
+R4 N002 N001 100R
+C1 N003 N005 0.8µ
+.tran 0 0.9 0 0.00005
+.model FLSSW SW(Ron=0.002 Roff=20Meg Vt=6 Vh=0.2)
+.backanno
+.end
